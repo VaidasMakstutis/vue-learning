@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component Communication Example_Customs Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.css" />
+    <style type="text/css">
+      body {
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" class="container">
+      <coupon @applied="onCouponApplied"></coupon>
+      <h2 v-if="couponApplied">You used a coupon!</h2>
+    </div>
+
+    <script src="https://unpkg.com/vue@2.7.10/dist/vue.js"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
